@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>محصول</title>
+    <!-- start css and style -->
+    <link rel="stylesheet" href="{% static 'shop/assets/3/css/bootstrap-rtl.css' %}">
+    <link type="text/css" href="{% static 'shop/assets/3/css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link type="text/css" href="{% static 'shop/assets/3/css/style.css' %}" rel="stylesheet" />
+    <style>
+        .cart-highlight {
+            color: #4CAF50 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 col-lg-push-2 col-md-push-1">
+                <!-- start product box -->
+                <div class="product">
+                    <!-- start back arrow -->
+                    <div class="header">
+                        <a href="/products" class="btn"><div class="back"></div></a>
+                    </div>
+                    <!-- end back arrow -->
+                    <!-- start box -->
+                    <div class="main">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                                <!-- start right side -->
+                                <div class="right">
+                                    <h1>{{ mahsool.onvan }}</h1>
+                                    <style>
+                                        .price-container {
+                                            display: flex;
+                                            align-items: center; 
+                                        }
+                                    
+                                        .price-input {
+                                            border: none;
+                                            background: none;
+                                            font-size: 30px; 
+                                            font-weight: bold; 
+                                            margin-right: 5px; 
+                                        }
+                                    
+                                        .currency {
+                                            font-size: 20px; 
+                                            margin-left: 5px; 
+                                        }
+                                    </style>
+                                    
+                                    <div class="price-container">
+                                        <span class="currency">تومان</span>
+                                        <input disabled name="product-price" class="price-input" value="{{ mahsool.gheymat }}">
+                                    </div>
+                                    
+                                    <img src="{{ mahsool.aks.url }}" >
+                                    {% for m in mahsool.img.all %}
+                                        <img src="{{ m.akss.url }}" width="200">
+                                    {% endfor %}
+                                </div>
+                                <!-- end right side -->
+                            </div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                <!-- start left side -->
+                                <div class="left">
+                                    <p>{{ mahsool.tosif }}</p>
+                                    <p>
+                                        <span class="fa fa-star yellow"></span>
+                                        <span class="fa fa-star yellow"></span>
+                                        <span class="fa fa-star yellow"></span>
+                                        <span class="fa fa-star yellow"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span>(4.67 - 172 بازخورد)</span>
+                                    </p>
+                                    <p class="quantity">تعداد<span class="fa fa-angle-right angle"></span><span id="qt">1</span><span class="fa fa-angle-left angle"></span></p>
+                                </div>
+                                <!-- end left side -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end box -->
+                    <!-- start footer and total -->
+                    <div class="footer col-lg-12 col-xs-12 p-0">
+                        <div class="left col-lg-6 col-xs-6">
+                            <p>
+                                <span id="price" class="highlight-text">{{ mahsool.gheymat }}</span> تومان
+                            </p>
+                        </div>
+                        
+
+                        
+                        <div class="row">
+                            <div class="align col-lg-6 col-xs-6">
+                                <br>
+                                <div id="basket" class="ml-auto d-flex align-items-center" style="text-align: center;">
+                                    <a href="/sabad" class="my-shadow">
+                                        <span class="basket-icon" style="font-size: 30px;"><i class="fa fa-shopping-cart" style="color: #4CAF50;"></i></span>
+                                        <a href="/addtocart/{{mahsool.id}}" style="font-weight: bold; color: #4CAF50; font-size: 30px;">سبد خرید</a>
+                                        <span class="badge badge-pill badge-light"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+
+                    </div>
+                    <!-- end footer and total -->
+                </div>
+                <!-- end product box -->
+            </div>
+        </div>
+    </div>
+    <!-- start java script -->
+    
+    <script src="{% static 'shop/assets/3/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'shop/assets/3/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'shop/assets/3/js/rebound.js' %}"></script>
+    <script src="{% static 'shop/assets/3/js/scripts.js' %}"></script>
+</body>
+</html>

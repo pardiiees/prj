@@ -1,0 +1,65 @@
+{% extends "shop/master.html" %}
+{% block "main" %}
+<style>
+    table {
+        margin: auto;
+        text-align: center;
+        border-collapse: collapse;
+        width: 50%; /* تغییر عرض جدول به 50% */
+    }
+
+    th, td {
+        border: 1px solid #ddd; /* حاشیه بین سلول‌ها */
+        padding: 15px; /* فاصله داخلی سلول‌ها */
+    }
+
+    th {
+        background-color: #f2f2f2; /* رنگ پس زمینه سرستون‌ها */
+    }
+
+    input[type="text"], input[type="submit"] {
+        width: 80%; /* تغییر عرض ورودی‌ها به 80% */
+        padding: 10px; /* افزایش فاصله بین محتوا و حاشیه ورودی‌ها */
+        margin: 5px 0; /* افزایش فاصله بین ورودی‌ها */
+    }
+
+    .register-link {
+        display: block;
+        margin-top: 10px; /* افزایش فاصله بین لینک ریجستر و جدول */
+        text-decoration: none;
+        background-color: #4CAF50; /* رنگ پس‌زمینه لینک ریجستر */
+        color: white; /* رنگ متن لینک ریجستر */
+        padding: 10px; /* افزایش فاصله داخلی لینک ریجستر */
+        border-radius: 5px; /* گوشه‌های گرد لینک ریجستر */
+    }
+
+
+</style>
+
+<form method="post">
+    {% csrf_token %}
+    <p style="text-align:center;"></p>
+    <table>
+        <tr>
+            <th colspan="2"> ورود کاربران</th>
+        </tr>
+        <tr>
+            <td style="text-align: left;">Username</td>
+            <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td style="text-align: left;">Password</td>
+            <td><input type="text" name="password"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Login"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="/register" class="register-link">ثبت نام کابر جدید</a>
+            </td>
+        </tr>
+    </table>
+</form>
+{% endblock %}
+

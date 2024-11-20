@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {%load static%}
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> فروشگاه پردیس رایانه</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="{% static 'shop/assets/images/favicon.png' %}">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="{% static 'shop/assets/css/bootstrap.min.css' %}">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="{% static 'shop/assets/css/fontawesome.min.css' %}">
+  <!-- Flat Icon -->
+  <link rel="stylesheet" href="{% static 'shop/assets/css/flaticon.css' %}">
+  <!-- animate -->
+  <link rel="stylesheet" href="{% static 'shop/assets/css/animate.css' %}">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="{% static 'shop/assets/css/owl.carousel.min.css' %}">
+  <!-- magnific popup -->
+  <link rel="stylesheet" href="{% static 'shop/assets/css/magnific-popup.css' %}">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="{% static 'shop/assets/css/style.css' %}">
+  <!-- responsive -->
+  <link rel="stylesheet" href="{% static 'shop/assets/css/responsive.css' %}">
+  
+  <link rel="stylesheet" href="{% static 'shop/assets/css/rtl.css' %}">
+</head>
+
+<body>
+
+  
+
+  <!-- Navebar Area start -->
+<header class="navigation">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-12 p-0">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="{% static 'shop/assets/images/logo.png' %}">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+            aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainmenu">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">خانه</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#about">درباره ما</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#feature">خدمات </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/products">محصولات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#testimonial-area">مشتریان</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#faq">سوالات متداول</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">ارتباط با ما </a>
+              </li>
+              {%if 'login' in request.session%}
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">خروج</a>
+              </li>
+              {%else%}
+              <li class="nav-item">
+                <a class="nav-link" href="/users">ورود</a>
+              </li>
+              {%endif%}
+
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              
+
+              <div class="d-flex align-items-center">
+                <div id="basket" class="ml-3" style="max-width: 150px;">
+                  <li class="nav-item">
+                    <a href="/sabad" class="my-shadow">
+                  </li>
+                  
+                    <span class="basket-icon"><i class="fa fa-shopping-cart" style="font-size: 16px;"></i></span>
+                    <span class="basket-text" style="font-size: 12px;">سبد خرید
+                      <span class="badge badge-pill badge-light"></span>
+                    </span>
+                  </a>
+                </div>
+
+                <div id="search" class="mr-3" style="max-width: 120px;">
+                  <form method="get" action="{% url 'product' %}">
+                      <div class="input-group">
+                          <input type="search" class="form-control" placeholder="جستجو" name="tt" />
+                          <div class="input-group-append">
+                              <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                          </div>
+                      </div>
+                  </form>
+                </div>
+              
+
+              </div>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Navebar Area End -->
+{% block "main" %}
+{% endblock %}
+
+{%block vasat%}{%endblock%}
+
+
+
+
+  <!-- Footer Section Start -->
+  <footer class="footer" id="footer">
+   <div class="container">
+     <div class="row justify-content-center">
+       <div class="col-md-6">
+         <div class="footer-info-area">
+           <div class="footer-logo">
+            
+           </div>
+           
+         </div>
+         <div class="fotter-social-links">
+           <ul>
+             <li>
+               <a href="https://instagram.com/pardis.rayaneh.shk?igshid=OGQ5ZDc2ODk2ZA==" class="facebook">
+                 <i class="fab fa-instagram"></i>
+               </a>
+             </li>
+             <li>
+               <a href="https://t.me/pardisrayanehshk" class="twitter">
+                 <i class="fab fa-telegram"></i>
+               </a>
+             </li>
+             
+             <li>
+              <a href="tel:09130662933" class="dribbble">
+                <i class="fas fa-phone"></i>
+              </a>
+             </li>
+           </ul>
+         </div>
+         
+       </div>
+     </div>
+   </div>
+ </footer>
+ <!-- Footer Section End -->
+
+ <!-- Back to Top Start -->
+ <div class="bottomtotop">
+   <i class="fa fa-chevron-right"></i>
+ </div>
+  <!-- Footer Section End -->
+
+  <!-- Back to Top Start -->
+  <div class="bottomtotop">
+    <i class="fa fa-chevron-right"></i>
+  </div>
+  <!-- Back to Top End -->
+
+
+  <!-- jquery -->
+  <script src="{% static 'shop/assets/js/jquery.js' %}"></script>
+  <!-- popper -->
+  <script src="{% static 'shop/assets/js/popper.min.js' %}"></script>
+  <!-- bootstrap -->
+  <script src="{% static 'shop/assets/js/bootstrap.min.js' %}"></script>
+  <!-- way poin js-->
+  <script src="{% static 'shop/assets/js/waypoints.min.js' %}"></script>
+  <!-- owl carousel -->
+  <script src="{% static 'shop/assets/js/owl.carousel.min.js' %}"></script>
+  <!-- magnific popup -->
+  <script src="{% static 'shop/assets/js/jquery.magnific-popup.js' %}"></script>
+  <!-- easing js-->
+  <script src="{% static 'shop/assets/js/jquery.easing.1.3.js' %}"></script>
+
+  <!-- main -->
+  <script src="{% static 'shop/assets/js/main.js' %}"></script>
+
+
+</body>
+
+</html>

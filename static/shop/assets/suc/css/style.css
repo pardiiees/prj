@@ -1,0 +1,69 @@
+/* CSS Document */
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir.eot');
+  src: local('../fonts/Vazir'), url('../fonts/Vazir.woff') format('woff'), url('../fonts/Vazir.ttf') format('truetype');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #09334f;
+  position: relative;
+  font-family: 'Vazir';
+  direction: rtl;
+}
+
+a {
+  color: whitesmoke;
+  line-height: 50px;
+}
+
+#yetiSVG {
+  width: 600px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#lightSVG {
+  width: 600px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+
+.content {
+  padding: 5rem 1rem 0 1rem;
+  position: relative;
+  z-index: 10;
+  font-family: 'Vazir', sans-serif;
+  color: #FFF;
+  text-align: center;
+}
+
+.content h3 {
+  margin: 0 0 .8rem;
+  font-size: 2.625rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.content p {
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 150%;
+  color: #d1e2ed;
+}
+
+.content p span {
+  text-decoration: line-through;
+}

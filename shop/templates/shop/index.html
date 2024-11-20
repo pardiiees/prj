@@ -1,0 +1,820 @@
+{%extends "shop/master.html"%}
+{%block vasat%}
+ <!-- Hero Area Start -->
+ {%load static%}
+ <div id="home" class="hero-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-self-center">
+        <div class="left-content">
+          <div class="content">
+            
+           
+            <!DOCTYPE html>
+            <html lang="fa">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>\پردیس رایانه </title>
+                <style>
+                    .text-center {
+                        text-align: center;
+                    }
+            
+                    .custom-text {
+                        font-family: 'IranNastaliq';
+                        color: white;
+                        font-size: 100px;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="text-center">
+                    <h1 class="custom-text">پردیس رایانه</h1>
+                    <p class="subtitle">
+                        <br> همه چیز زیر یک سقف <br> اتصال همیشگی به دنیای متصل
+                    </p>
+                    <div class="links">
+                        <a href="/products" class="mybtn2"><span>هم اکنون خریداری کنید</span></a>
+                    </div>
+                </div>
+            </body>
+            </html>
+            
+
+          
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-first order-lg-last">
+        <div class="right-img">
+          <div class="discount-circle">
+            <div class="discount-circle-inner">
+              <div class="price">
+              
+                <span>خوش آمدید</span>
+              </div>
+            </div>
+          </div>
+          <img class="img-fluid img" src="{% static 'shop/assets/images/rooham.png' %}" alt="" style="width: 700px; max-width: 700px; float: left;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Hero Area End -->
+
+<!-- About Area Start -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="section-title extra">
+          <h2 class="title">حالا چرا شرکت ما ؟!</h2>
+          <p>
+        آیا شما به دنبال راهکار قدرتمند و قابل اعتماد برای نیازهای خود در زمینه خرید و خدمات هستید؟<br>انتخاب ما، انتخاب هوشمندانه شماست <br> 
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-lg-5 align-self-center">
+        <div class="iamge">
+          <img src="{% static 'shop/assets/images/us.png' %}" alt="" style="width: 550px; max-width: 550px">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box one">
+              <div class="inner-box">
+                <div class="icon">
+                   <img src="{% static 'shop/assets/images/customize.png' %}" style="width: 100px; max-width: 100px">
+                </div>
+                <h4 class="title">سفارشی‌سازی  </h4>
+                <p class="text">
+                  انتخاب محصولات بر اساس بودجه مشتری، ارائه پیشنهادات محصولات و خدمات مخصوص مشتریان ، پشتیبانی دقیق از سفارشات و تغییرات مشتریان.
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box two">
+              <div class="inner-box">
+                <div class="icon">
+                  <img src="{% static 'shop/assets/images/24-hours.png' %}" style="width: 100px; max-width: 100px">
+                </div>
+                <h4 class="title">خدمات و پشتیبانی</h4>
+                <p class="text">
+                  در صورت بروز مشکل، تیم ما آماده کمک کردن به شماست. تعمیرات و خدمات ما سریع و کارآمد است وتا رفع مشکل همراه شما هستیم.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box three">
+              <div class="inner-box">
+                <div class="icon">
+                  <img src="{% static 'shop/assets/images/operator.png' %}" style="width: 100px; max-width: 100px">
+                </div>
+                <h4 class="title">مشاوره تخصصی</h4>
+                <p class="text">
+                  با توجه به تجربه ما در خدمات ، فروش و ارتقا، ما به شما مشاوره‌های تخصصی ارائه می‌دهیم. 
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box four">
+              <div class="inner-box">
+                <div class="icon">
+                  <img src="{% static 'shop/assets/images/best-price.png' %}" style="width: 100px; max-width: 100px">
+                </div>
+                <h4 class="title">قیمت منصفانه</h4>
+                <p class="text">
+                  ما به عنوان یک شرکت متعهد به مشتریان خود، تلاش می‌کنیم تا محصولات و خدمات با قیمت‌های منصفانه ارائه دهیم.
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Area End -->
+<section class="whaybest">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="section-title extra">
+          <h2 class="title">نمایندگی فروش محصولات تسکو </h2>
+          <p>
+            لوازم جانبی کامپیوتر ، موبایل و صوتی - تصویری
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-lg-6">
+        <div class="info">
+          <ul class="feature-list">
+            <li>
+              <div class="icon">
+                <img src="{% static 'shop/assets/images/gh.png' %}" style="width: 60px; max-width: 60px">
+              </div>
+              <div class="content">
+                <h4>قیمت مناسب</h4>
+                <p>قیمت‌های مناسب تسکو، بهترین ارزش را با بودجه‌ای مقرون‌به‌صرفه به شما ارائه می‌دهد.
+              </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="{% static 'shop/assets/images/ke.png' %}" style="width: 60px; max-width: 60px">
+              </div>
+              <div class="content">
+                <h4>کیفیت مناسب </h4>
+                <p>کیفیت بالای محصولات تسکو، شما را به خریدی مطمئن و رضایت‌بخش دعوت می‌کند.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="{% static 'shop/assets/images/ziba.png' %}" style="width: 60px; max-width: 60px">
+              </div>
+              <div class="content">
+                <h4>ظاهر چشم نواز</h4>
+                <p>ظاهر چشم‌نواز محصولات تسکو، تجربه‌ای شیک و مدرن را برای شما به ارمغان می‌آورد.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="{% static 'shop/assets/images/po.png' %}" style="width: 60px; max-width: 60px">
+              </div>
+              <div class="content">
+                <h4>پشتیبانی و گارانتی</h4>
+                <p> پشتیبانی وگارانتی محصولات جهت رضایت هرچه بیشتر مشتریان و خدمت رسانی
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex order-first order-lg-last">
+        <div class="about-img">
+          <img src="{% static 'shop/assets/images/tsco.png' %}" alt="" style="width: 600px; max-width: 600px">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- We are best Area Start -->
+<section class="whaybest">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="section-title extra">
+          <h2 class="title">نمایندگی فروش اینترنت آسیاتک</h2>
+          <p>
+             اینترنت تک ، آسیاتک 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-lg-6">
+        <div class="info">
+          <ul class="feature-list">
+            <li>
+              <div class="icon">
+                <img src="{% static 'shop/assets/images/money.png' %}" style="width: 60px; max-width: 60px">
+              </div>
+              <div class="content">
+                <h4>قیمت مناسب</h4>
+                <p>بسته های تخفیف ویژه و به صرفه ، ارائه اینترنت عمومی و رایگان در فرودگاه‌ها، مراکز خرید، ایستگاه‌های راه‌آهن و ...
+              </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="{% static 'shop/assets/images/international.png' %}" style="width: 60px; max-width: 60px">
+              </div>
+              <div class="content">
+                <h4>پوشش منطقه‌ای</h4>
+                <p>یکی از بزرگترین توزیع‌کنندگان پهنای باند اینترنت در سطح کشور
+                  پیگیری و پشتیبانی مناسب مشکلات مشترکین
+              </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="{% static 'shop/assets/images/best.png' %}" style="width: 60px; max-width: 60px">
+              </div>
+              <div class="content">
+                <h4>برترین اپراتور</h4>
+                <p>برترین اپراتور ارتباطات ثابت کشور بر اساس ارزیابی سازمان تنظیم مقررات و ارتباطات رادیویی در سالیان متوالی
+              </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">
+                <img src="{% static 'shop/assets/images/information.png' %}" style="width: 60px; max-width: 60px">
+              </div>
+              <div class="content">
+                <h4>پشتیبانی</h4>
+                <p> پشتیبانی و تلفن سراسری جهت رضایت هرچه بیشتر مشترکین و خدمت رسانی
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex order-first order-lg-last">
+        <div class="about-img">
+          <img src="{% static 'shop/assets/images/asiatec.png' %}" alt="" style="width: 600px; max-width: 600px">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--We are best Area Start -->
+
+<!-- Service Area start -->
+<section class="feature" id="feature">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="section-title">
+          <h2 class="title">خدمات</h2>
+          <p>
+           
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="left-feature">
+          <div class="feature-box feature-box1">
+            <div class="feature-circle">
+              <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="details">
+              <h4>
+                <a href="#" class="title">
+                  تعمیرات نرم‌افزاری
+                </a>
+              </h4>
+              <p class="text">حل مشکلات نرم‌افزاری اعم از سیستم‌عامل، نرم‌افزارهای کاربردی، و درایورها. این شامل رفع اشکال‌زدایی، به‌روزرسانی، و نصب مجدد نرم‌افزارها می‌شود
+
+              </p>
+            </div>
+            <div class="icon-area">
+              <div class="icon">
+                <i class=""></i>
+              </div>
+            </div>
+          </div>
+          <div class="feature-box feature-box2">
+            <div class="feature-circle">
+              <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="details">
+              <h4>
+                <a href="#" class="title">نصب و راه‌اندازی</a>
+              </h4>
+              <p class="text">نصب و پیکربندی سیستم‌های کامپیوتری، نرم‌افزارها، شبکه‌ها، و تجهیزات دیگر
+
+              </p>
+            </div>
+            <div class="icon-area">
+              <div class="icon">
+                <i class=""></i>
+              </div>
+            </div>
+          </div>
+          <div class="feature-box feature-box3">
+            <div class="feature-circle">
+              <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="details">
+              <h4>
+                <a href="#" class="title">پشتیبانی فنی</a>
+              </h4>
+              <p class="text">ارائه خدمات پشتیبانی فنی برای رفع مشکلات و سوالات مشتریان در زمینه فناوری اطلاعات</p>
+            </div>
+            <div class="icon-area">
+              <div class="icon">
+                <i class=""></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-flex justify-content-center">
+        <div class="center-feature align-self-center">
+          <img src="{% static 'shop/assets/images/khadamat.png' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="right-feature">
+          <div class="feature-box feature-box4">
+            <div class="feature-circle">
+              <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="icon-area">
+              <div class="icon">
+                <i class=""></i>
+              </div>
+            </div>
+            <div class="details">
+              <h4>
+                <a href="#" class="title"> ارتقاء سیستم</a>
+              </h4>
+              <p class="text"> ارتقاء سیستم‌های کامپیوتری و تجهیزات مرتبط برای حل مشکلات فنی و بهبود عملکرد
+
+              </p>
+            </div>
+          </div>
+          <div class="feature-box feature-box5">
+            <div class="feature-circle">
+              <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="icon-area">
+              <div class="icon">
+                <i class=""></i>
+              </div>
+            </div>
+            <div class="details">
+              <h4>
+                <a href="#" class="title">تعمیرات سخت‌افزاری</a>
+              </h4>
+              <p class="text">
+              تعمیر و نگهداری سخت‌افزارهای کامپیوتری مانند کامپیوترها، لپ‌تاپ‌ها، مانیتورها، پرینترها، و دستگاه‌های جانبی دیگر. این شامل تعمیر قطعات تعویض‌پذیر مثل هارد دیسک، رم، گرافیک کارت، و غیره می‌شود  
+
+              </p>
+            </div>
+          </div>
+          <div class="feature-box feature-box6">
+            <div class="feature-circle">
+              <div class="feature-circle-inner"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="icon-area">
+              <div class="icon">
+                <i class=""></i>
+              </div>
+            </div>
+            <div class="details">
+              <h4>
+                <a href="#" class="title"> اینترنت آسیاتک</a>
+              </h4>
+              <p class="text">ارائه خدمات و فروش اینترنت، شامل اتصال به اینترنت از طریق DSL، فیبر نوری، یا ارتباطات ماهواره‌ای
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Service Area End -->
+
+
+
+<!-- Pricing Area Start -->
+
+
+  
+
+
+          
+
+
+
+<!-- Testimonial Area Start -->
+<section class="testimonial-area" id="testimonial-area">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="section-title extra">
+          <h2 class="title">مشتریان ما می گویند </h2>
+          <p>
+            
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-12">
+        <div class="testimonial-slider">
+          <div class="item">
+            <div class="client">
+              <div class="client-image">
+                <img src="{% static 'shop/assets/images/testimonialimage/1.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <p class="client-say">
+                اگه دنبال یه جایی هستید که خدمات کامپیوتری خوبی ارائه بده و هم قیمت مناسبی داشته باشه، پردیس رایانه بهترین گزینه‌ست. تیم فنیشون واقعاً حرفه‌ایه و همیشه به سرعت مشکلات رو حل می‌کنن. همچنین قیمت‌هاشون هم  خیلی مناسبه.
+
+              </p>
+              <h4 class="client-name">
+                <a href="#">
+                  رضا احمدی
+                </a>
+              </h4>
+              <h5 class="designation"></h5>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="client">
+              <div class="client-image">
+                <img src="{% static 'shop/assets/images/testimonialimage/2.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <p class="client-say">
+                من کار با پردیس رایانه رو به همه توصیه می‌کنم. تخصص و دانش فنی‌شون عالیه و همیشه وقتی نیاز داشتم، در دسترس بودن. حتی نصب نرم‌افزارها و به‌روزرسانی‌ها رو هم به خوبی انجام می‌دن. برای من پردیس رایانه بهترین گزینه بوده و همیشه از خدماتشون راضی بودم.
+
+              </p>
+              <h4 class="client-name">
+                <a href="#">
+                  زهرا کریمی
+                </a>
+              </h4>
+              <h5 class="designation"></h5>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="client">
+              <div class="client-image">
+                <img src="{% static 'shop/assets/images/testimonialimage/1.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <p class="client-say">
+               تجربه کار با پردیس رایانه برای من عالی بوده است.<br> از تعمیرات گرفته تا نصب ویندوز ، تعمیرات و اسمبل سیستم  <br>من به همه دوستانم این شرکت را توصیه کرده‌ام. تخصص و دانش فنی آنها بی‌نظیر است.
+
+              </p>
+              <h4 class="client-name">
+                <a href="#">
+                  حسین حیدرزاده
+                </a>
+              </h4>
+              <h5 class="designation"></h5>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="client">
+              <div class="client-image">
+                <img src="{% static 'shop/assets/images/testimonialimage/2.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <p class="client-say">
+                تجربه من با پردیس رایانه بسیار مثبت بود. خدمات فنی عالی دارند و همیشه در دسترس هستند. به من نه تنها در تعمیرات، بلکه در انتخاب و نصب تجهیزات هم کمک کردند. تمامی پروژه‌های کامپیوتری خود را به آنها انجام داده‌ام و همیشه به رضایت کامل بوده‌ام.
+
+              </p>
+              <h4 class="client-name">
+                <a href="#">
+                  زینب حیدری
+                </a>
+              </h4>
+              <h5 class="designation"></h5>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonial Area End -->
+
+<!-- Subscribe Area Start -->
+
+<!-- Subscribe Area End -->
+
+
+
+
+
+<!-- Partner Area Start -->
+<section id="faq" class="faq">
+  <div class="container">
+    <div class="section-title extra">
+      <h2 class="title">سؤالات پرسیده شده</h2>
+      <p>
+        در صورت داشتن سوالات بیشتر می توانید از طریق پل های ارتباطی با ما ارتباط برقرار کنید
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="panel-group accordion" id="accordion-1">
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#one" aria-controls="one"
+                class="panel-title">
+                شما چه تجهیزاتی را عرضه می‌کنید؟
+
+              </h4>
+            </div>
+            <div id="one" class="panel-collapse collapse" aria-labelledby="one" data-parent="#accordion-1">
+              <div class="panel-body">
+                <p>
+                	لپ تاپ‌ها و کامپیوترها: ما انواع مختلفی از لپ تاپ‌ها و کامپیوترهای رومیزی و قطعات مرتبط به آن‌ها را در اختیار مشتریان قرار می دهیم. این شامل لپ تاپ‌های تجاری و مصرفی، کامپیوترهای اسکلتی، کارت گرافیک، حافظه RAM و مراقبت‌های مرتبط با کامپیوتر می‌شود<br>
+	نرم افزارها: ما نرم افزارهای مختلفی را ارائه می دهیم، از جمله سیستم عامل‌ها، نرم افزارهای امنیتی، ابزارهای طراحی، و نرم افزارهای متخصص<br>
+	تجهیزات جانبی: ما متعلقاتی مثل مانیتورها، کیبوردها، موس‌ها، هدفون‌ها، اسپیکرها و دستگاه‌های ورودی و خروجی دیگری نیز عرضه می‌کنیم<br>
+	قطعات کامپیوتری: قطعات مختلف مانند هارد دیسک‌ها، SSDها، پردازنده‌ها، مادربردها، کارت گرافیک و RAM در اختیار مشتریان قرار دارند<br>
+	تجهیزات شبکه: ما تجهیزات مربوط به شبکه‌های کامپیوتری از جمله مودم‌ها، روترها، سوئیچ‌ها و کابل‌های شبکه را نیز عرضه می کنیم<br>
+
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#two" aria-controls="two"
+                class="panel-title">
+                 خدمات تعمیر و پشتیبانی ارائه می‌دهید؟
+
+
+            </h4>
+            </div>
+            <div id="two" class="panel-collapse collapse" aria-labelledby="two" data-parent="#accordion-1">
+              <div class="panel-body">
+                  <p>
+                      
+بله، در پردیس رایانه، ما خدمات تعمیر و پشتیبانی کامپیوتری ارائه می دهیم. اگر کامپیوتر، لپ تاپ یا قطعات کامپیوتری شما با مشکلات فنی مواجه شده یا نیاز به تعمیر دارند، تیم متخصص ما آماده است تا به شما کمک کند<br>
+خدمات تعمیر و پشتیبانی ما می‌تواند شامل موارد زیر باشد<br>
+	تعمیرات سخت‌افزاری: این شامل تعمیر قطعات کامپیوتری مثل هارد دیسک، مادربرد، کارت گرافیک و سایر قطعات مرتبط می‌شود<br>
+	تعمیرات نرم‌افزاری: ما به حل مشکلات نرم افزاری شما کمک می کنیم، از جمله نصب و رفع مشکلات سیستم عامل یا نرم افزارهای مختلف<br>
+	پشتیبانی فنی: تیم ما آماده است تا به شما در مواردی مانند مشکلات سیستمی، ویروس‌ها، برنامه‌نویسی و تنظیمات شبکه کمک کند<br>
+	تعویض و ارتقاء قطعات: اگر نیاز به تعویض یا ارتقاء قطعات دارید، ما می‌توانیم به شما در این مورد همکاری کنیم<br>
+	مشاوره فنی: ما مشاوره در مورد نحوه استفاده بهینه از تجهیزات کامپیوتری و نرم افزارها نیز ارائه می دهیم
+
+
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#three" aria-controls="three"
+                class="panel-title">
+                 امکان ارتقاء تجهیزات قدیمی را دارید؟
+              </h4>
+            </div>
+            <div id="three" class="panel-collapse collapse" aria-labelledby="three" data-parent="#accordion-1">
+              <div class="panel-body">
+                  <p>
+                    بله، در پردیس رایانه ما امکان ارتقاء تجهیزات کامپیوتری قدیمی را داریم. اگر شما دستگاه کامپیوتری یا لپ تاپ قدیمی دارید که به تجدید نظر و بهبود نیاز دارد، تیم ما از تخصص و تجربه لازم برای ارتقاء و بهینه‌سازی آن برخوردار است<br>
+                    ارتقاء تجهیزات قدیمی ممکن است شامل موارد زیر باشد<br>
+                    ارتقاء سخت‌افزاری: این شامل تعویض یا ارتقاء قطعات سخت‌افزاری مثل هارد دیسک، RAM، پردازنده، یا کارت گرافیک می‌شود تا عملکرد دستگاه بهبود یابد<br>
+                    نصب سیستم عامل جدید: اگر سیستم عامل قدیمی شما منسوخ شده است، ما می‌توانیم نسخه جدیدتر را نصب کرده و بروزرسانی کنیم<br>
+                    بهینه‌سازی نرم‌افزاری: ممکن است نیاز به بهینه‌سازی نرم‌افزاری داشته باشید تا سرعت و کارایی دستگاه بهبود یابد<br>
+                    پشتیبانی از نرم‌افزارهای جدید: اگر نرم‌افزارهای جدید نیاز به سیستم عامل یا سخت‌افزار قدرتمندتر دارند، ما می‌توانیم شما را راهنمایی کرده و تجهیزات را بهینه کنیم<br>
+                    اصلاح مشکلات فنی: هرگونه مشکلات فنی در دستگاه شما را تعمیر و بهبود می‌دهیم
+                    
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#four" aria-controls="four"
+                class="panel-title">
+                 مشاوره تخصصی در زمینه خرید کالا و اینترنت ارائه می‌دهید؟
+              </h4>
+            </div>
+            <div id="four" class="panel-collapse collapse" aria-labelledby="four" data-parent="#accordion-1">
+              <div class="panel-body">
+                  <p>
+                    بله، در پردیس رایانه، ما مشاوره تخصصی در زمینه خرید کالا و مسائل مرتبط با اینترنت نیز ارائه می دهیم. تیم ما از متخصصانی تجربه‌دار در زمینه فناوری اطلاعات و خرید آنلاین تشکیل شده است که می‌توانند به شما در انتخاب و خرید محصولات مناسب و همچنین مسائل امنیتی و حریم خصوصی مرتبط با اینترنت راهنمایی کنند.<br>
+                    مشاوره ما می‌تواند شامل موارد زیر باشد:<br>
+                    انتخاب محصول مناسب: ما به شما کمک می‌کنیم تا محصولاتی که به نیازها و اهداف شما می‌خورند را انتخاب کنید، از جمله لپ تاپ‌ها، تجهیزات کامپیوتری، نرم‌افزارها و دیگر وسایل تکنولوژیک.<br>
+                    امنیت اینترنتی: ما مشاوره در مورد امنیت اینترنتی، حریم خصوصی آنلاین و روش‌های محافظت از اطلاعات شخصی شما نیز ارائه می‌دهیم.<br>
+                    نکات خرید آنلاین: ما به شما نکات و راهنمایی‌های مربوط به خرید آنلاین، انتخاب فروشگاه‌های اعتمادی و اطلاعات پرداخت امن را ارائه می‌دهیم.<br>
+                    تنظیمات و تغییرات شبکه: اگر به تنظیمات شبکه یا مسائل اینترنتی مشکل دارید، ما به شما کمک می‌کنیم تا مشکلات را حل کرده و شبکه‌ی خود را بهینه کنید.
+                    
+                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#four2" aria-controls="four2"
+                class="panel-title">
+                 می‌توانیم با روش‌های مختلف پرداخت کنیم؟
+
+
+              </h4>
+            </div>
+            <div id="four2" class="panel-collapse collapse" aria-labelledby="four2" data-parent="#accordion-1">
+              <div class="panel-body">
+                  <p>
+                    بله، در پردیس رایانه، ما اغلب به مشتریان امکان پرداخت با روش‌های مختلف را ارائه می دهیم تا آنها راحت‌ترین روش پرداخت را برای خریدهای خود انتخاب کنند. این شامل موارد زیر می‌شود:<br>
+                    پرداخت نقدی: شما می‌توانید مبلغ خرید را به صورت نقدی در فروشگاه پردیس رایانه پرداخت کنید.<br>
+                    انتقال وجه از طریق اینترنت بانکی: شما می‌توانید مبلغ خرید را از طریق انتقال وجه از حساب بانکی خود به حساب فروشگاه پردیس رایانه پرداخت کنید.<br>
+                    پرداخت از طریق درگاه‌های امن اینترنتی: ما ممکن است از درگاه‌های امن اینترنتی برای پرداخت آنلاین استفاده کنیم تا اطلاعات مالی شما به صورت امن و رمزگذاری شده انتقال یابد.<br>
+                    پرداخت قسطی در حال حاضر امکان پذیر نیست.
+                    
+                    </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex">
+        <div class="panel-group accordion" id="accordion-2">
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#five" aria-controls="five"
+                class="panel-title">
+               قیمت‌های ویژه برای مشتریان خریدعمده یا همیشگی دارید؟
+              </h4>
+            </div>
+            <div id="five" class="panel-collapse collapse" aria-labelledby="five" data-parent="#accordion-2">
+              <div class="panel-body">
+                  <p>
+                    بله ، قیمت‌های ویژه ممکن است شامل موارد زیر باشند:<br>
+
+                    تخفیف‌های حجمی: با افزایش تعداد محصولات یا خدماتی که خریداری می‌کنید، می‌توانید تخفیف‌های اضافی دریافت کنید.<br>
+                    
+                    قیمت‌های ویژه برای مشتریان دائمی: اگر به عنوان مشتری دائمی با یک فروشگاه همکاری می‌کنید، ممکن است تخفیف‌ها و قیمت‌های ویژه برای شما در نظر گرفته شود.<br>
+                    
+                    بسته‌های خدماتی: برخی از فروشگاه‌ها بسته‌های خدماتی با قیمت‌های ویژه برای مشتریان خرید عمده ارائه می‌دهند که شامل خدمات پشتیبانی، تعمیر و مشاوره می‌شوند.<br>
+                    
+                    قیمت‌های ویژه برای محصولات مشخص: برخی از محصولات معمولاً به دلیل خرید حجیم تخفیف ویژه دارند.
+                    
+                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#six" aria-controls="six"
+                class="panel-title">
+                 محصولات معتبری را از برندهای معتبر عرضه می‌کنید؟
+              </h4>
+            </div>
+            <div id="six" class="panel-collapse collapse" aria-labelledby="six" data-parent="#accordion-2">
+              <div class="panel-body">
+                  <p>
+                    بله، ما در پردیس رایانه محصولات معتبری را از برندهای معتبر عرضه می کنیم. ما به دقت انتخاب می‌کنیم که محصولات ما از برندهایی با کیفیت و شناخته شده در عرصه فناوری اطلاعات و کامپیوتری باشند. این برندها ممکن است شامل موارد زیر باشند<br>:
+
+                    HP (Hewlett-Packard): HP یکی از بزرگترین و شناخته شده‌ترین شرکت‌های تولید کننده لپ تاپ‌ها، کامپیوترها و تجهیزات جانبی کامپیوتری است.<br>
+                    
+                    Dell: Dell نیز یک شرکت معتبر در زمینه تولید لپ تاپ‌ها، سرورها و دستگاه‌های کامپیوتری است.<br>
+                    
+                    Lenovo: Lenovo یکی دیگر از برندهای مشهور در زمینه لپ تاپ‌ها و تجهیزات کامپیوتری است.<br>
+                    
+                    Microsoft: Microsoft تولیدکننده نرم‌افزارهای معروفی مانند ویندوز و افیس می‌باشد و همچنین محصولات سخت‌افزاری مانند Surface را نیز تولید می‌کند.<br>
+                    ASUS: ASUS تولیدکننده معتبری از لپ تاپ‌ها، کامپیوترها و کارت‌های گرافیک است.<br>
+                    
+                    Acer: Acer یکی دیگر از برندهای معتبر در زمینه لپ تاپ‌ها، مانیتورها و تجهیزات کامپیوتری است.<br>
+                    
+                    Sony: Sony محصولات متنوعی از لپ تاپ‌ها و تلویزیون‌ها را تولید می‌کند.<br>
+                    
+                    Intel: Intel بزرگترین تولیدکننده پردازنده‌های کامپیوتری است و نامزد اصلی در زمینه پردازنده‌های مرکزی و گرافیکی می‌باشد.
+                    
+                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#seven" aria-controls="seven"
+                class="panel-title">
+               می‌توانیم درخواست خدمات اضافی کنیم؟  
+              </h4>
+            </div>
+            <div id="seven" class="panel-collapse collapse" aria-labelledby="seven" data-parent="#accordion-2">
+              <div class="panel-body">
+                  <p>
+                    بله ، این خدمات شامل موارد زیر هستند:<br>
+
+                    تعمیر و نگهداری خاص: شما می‌توانید خدمات تعمیر و نگهداری خاصی را برای تجهیزات خود درخواست کنید، مانند تعمیرات فوری یا نگهداری دوره‌ای.<br>
+                    
+                    آموزش و مشاوره: اگر به آموزش یا مشاوره در زمینه استفاده از تجهیزات یا نرم‌افزارهای خاصی نیاز دارید، می‌توانید این خدمات را درخواست کنید.<br>
+                    
+                    پشتیبانی فنی سفارشی: شما می‌توانید تعیین کنید که خدمات پشتیبانی فنی چگونه باید برای شما ارائه شود و درخواست‌های خاص خود را مطرح کنید.<br>
+                    
+                    پیکاپ و تحویل محصولات: اگر نیاز به خدمات پیکاپ و تحویل محصولات دارید، می‌توانید این خدمات را درخواست کنید.<br>
+                    
+                    تنظیمات ویژه و سفارشی: برخی از مشتریان نیاز به تنظیمات ویژه و سفارشی در سیستم‌ها و نرم‌افزارها دارند که می‌توانند این تغییرات را درخواست کنند.
+                    
+                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#eight" aria-controls="eight"
+                class="panel-title">
+                شما به شرکت‌ها و تجارت‌ها خدمات ارائه می‌دهید؟
+              </h4>
+            </div>
+            <div id="eight" class="panel-collapse collapse" aria-labelledby="eight" data-parent="#accordion-2">
+              <div class="panel-body">
+                  <p>
+                    بله، ما خدمات گسترده‌ای را به شرکت‌ها و تجارت‌ها در زمینه فناوری اطلاعات و کامپیوتری ارائه می‌دهیم. این خدمات شامل نصب و پیکربندی سیستم‌های کامپیوتری، تعمیرات و پشتیبانی فنی، توسعه نرم‌افزارهای سفارشی، مدیریت شبکه‌ها و امنیت اطلاعات، آموزش و مشاوره فناوری اطلاعات، فروش تجهیزات و نرم‌افزارهای کامپیوتری، مدیریت پایگاه داده‌ها و مشاوره در زمینه استراتژی‌های فناوری اطلاعات می‌شود. برای اطلاعات بیشتر و برای تعیین چگونگی تطبیق این خدمات با نیازهای شما، با ما تماس بگیرید تا بتوانیم به شما پاسخ دقیق‌تری ارائه دهیم.
+                    </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h4 data-toggle="collapse" aria-expanded="false" data-target="#nine" aria-controls="nine"
+                class="panel-title">
+                 به خدمات و تعمیرات در محل مشتریان می‌پردازید؟
+              </h4>
+            </div>
+            <div id="nine" class="panel-collapse collapse" aria-labelledby="nine" data-parent="#accordion-2">
+              <div class="panel-body">
+                  <p>
+                      
+بله، ما اغلب خدمات و تعمیرات در محل مشتریان نیز ارائه می‌دهیم. این به معنای این است که تکنسین‌های ما به محل شما می‌آیند تا مشکلات سخت‌افزاری یا نرم‌افزاری خود را تشخیص دهند و تعمیرات لازم را انجام دهند. این خدمات می‌توانند شامل موارد زیر باشند:<br>
+
+تعمیرات سریع: اگر کامپیوتر یا تجهیزات دیگر شما به تعمیر نیاز دارند و نیاز به استفاده مستقیم از آنها دارید، ما تعمیرات را در محل شما انجام می‌دهیم.<br>
+
+نصب و راه‌اندازی: ما به شما در نصب و پیکربندی تجهیزات جدید کامپیوتری و نرم‌افزارها کمک می‌کنیم.<br>
+
+پشتیبانی فنی: اگر نیاز به پشتیبانی فنی دوره‌ای دارید، تکنسین‌های ما می‌توانند به محل شما بیایند و به مسائل فنی شما راهنمایی کنند.<br>
+
+مشاوره: ما به شما مشاوره می‌دهیم و به شما کمک می‌کنیم تا راه‌حل‌های بهینه برای مسائل کامپیوتری خود را پیدا کنید.
+
+                    </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+
+<!-- Partner Area End -->
+
+<!-- Contact Area Start -->
+
+<!-- Contact Area End -->
+
+<!-- Google Map Area Start -->
+<div class="map_wrapper">
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1417.5947149714473!2d50.870871156446874!3d32.32186139410147!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbef1f04045bfab%3A0x5b92597b8e14fca1!2z2b7Ysdiv24zYsyDYsdin24zYp9mG2Yc!5e0!3m2!1sen!2s!4v1694283559102!5m2!1sen!2s"
+    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<br><br><br><br>
+<!-- Google Map Area End -->
+{%endblock%}
